@@ -5,7 +5,7 @@ import { LuBadgeInfo } from "react-icons/lu";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { PiStudent } from "react-icons/pi";
 import { TfiMenuAlt } from "react-icons/tfi";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -28,7 +28,7 @@ const Navbar = () => {
               <NavLink className="flex gap-1 items-center"><MdOutlinePermContactCalendar /> Contact</NavLink>
             </ul>
           </div>
-          <a className="btn btn-ghost  md:text-xl">Mehefuj A.</a>
+          <Link to='/' className="md:text-xl xl:text-2xl font-bold">Mehefuj A.</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-5">
@@ -41,7 +41,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn  btn-sm md:btn-md rounded bg-primary-color text-black ">
+          <a className="btn  btn-sm md:btn-md rounded bg-primary-color hover:bg-primary-color hover:scale-105 text-black ">
             Download CV
           </a>
         </div>
