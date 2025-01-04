@@ -2,8 +2,8 @@ import SectionHeading from "../../ShairedComponents/SectionHeading";
 
 const Aboutme = () => {
   return (
-    <div id="aboutme-sec" className="">
-      <div className=" mb-4">
+    <div id="aboutme" className="">
+      <div className=" mt-14 mb-4">
         <SectionHeading title={"About Me"} color={true} />
       </div>
       <div className=" py-14 bg-low-bg-color ">

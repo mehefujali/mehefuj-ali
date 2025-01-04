@@ -3,7 +3,7 @@ import SkillCard from "../../ShairedComponents/SkillCard";
 
 const Skills = () => {
   return (
-    <div id="skills-section" className=" py-14">
+    <div id="skills" className=" py-14">
       <SectionHeading
         title={"Skills"}
         subTitle="Proficient in HTML, CSS, JavaScript, and React.js, I specialize in creating responsive and visually stunning web applications. With a strong foundation in UI/UX design and modern development tools, I bring ideas to life with precision and creativity."
