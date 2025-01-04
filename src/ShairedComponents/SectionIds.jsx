@@ -1,0 +1,1 @@
+export const sectionIds = ['home' ,'aboutme' , 'skills' , 'educaiton' , 'projects' , 'contact']

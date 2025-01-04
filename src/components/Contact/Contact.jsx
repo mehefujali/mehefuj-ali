@@ -11,7 +11,7 @@ const Contact = () => {
     <div className=" my-14" id="contact">
       <SectionHeading title={"Let’s Connect"} color={true}></SectionHeading>
       <div className=" w-11/12 mx-auto mt-12">
-        <div className=" flex w-full justify-center items-start lg:items-center flex-col gap-6 lg:flex-row">
+        <div className=" flex w-full justify-center items-start md:justify-between lg:justify-center xl:items-center flex-col gap-6 md:flex-row">
           <div className=" lg:w-4/12">
             <h1 className="text-2xl">Contact details</h1>
             <div className=" w-full mt-6" >
@@ -53,10 +53,10 @@ const Contact = () => {
              </ul>
             </div>
           </div>
-          <div className=" h-96 hidden lg:flex  mx-16 border-r-2 border-gray-500">
+          <div className=" h-96 hidden md:flex  mx-16 border-r-2 border-gray-500">
 
           </div>
-          <div className=" w-full lg:w-4/12">
+          <div className=" w-full md:w-6/12 lg:w-4/12">
             <form action="" className="w-full flex flex-col gap-2">
               <label htmlFor="" className=" flex flex-col gap-1 items-start">
                 Name :
