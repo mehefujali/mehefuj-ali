@@ -6,7 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 import "./banner.css";
 const Banner = () => {
   return (
-    <div id="hero-bg" className=" py-20   relative overflow-hidden bg-cover bg-gradient-to-t from-transparent to-sec-color ">
+    <div  id="hero-bg" className=" py-20   relative overflow-hidden bg-cover bg-gradient-to-t from-transparent to-sec-color ">
       <div className="  gap-4 w-11/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="md:w-6/12 w-11/12 mx-auto md:mx-0">
           <div className="  flex flex-col gap-2">

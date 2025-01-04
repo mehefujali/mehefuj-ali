@@ -20,7 +20,7 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm gap-4 dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-5 shadow"
             >
-              <a className="flex gap-1 items-center"><IoHomeOutline />Home</a>
+              <a href="#hero-bg" className="flex gap-1 items-center"><IoHomeOutline />Home</a>
               <a href="#aboutme-sec" className="flex gap-1 items-center"><LuBadgeInfo /> About me</a>
               <a href="#skills-section" className="flex gap-1 items-center"><GiSkills /> Skills</a>
               <a className="flex gap-1 items-center"><PiStudent /> Education</a>
@@ -32,10 +32,10 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-5">
-            <a to="">Home</a>
+            <a href="#hero-bg">Home</a>
           <a href="#aboutme-sec">About me</a>
             <a href="#skills-section">Skills</a>
-            <a>Education</a>
+            <a >Education</a>
             <a>Projects</a>
             <a>Contact</a>
           </ul>
