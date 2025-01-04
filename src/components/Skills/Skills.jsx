@@ -20,6 +20,7 @@ const Skills = () => {
         <SkillCard img="https://i.imgur.com/HdyOITq.png" />
         <SkillCard img="https://i.imgur.com/SSVAekE.png" />
         <SkillCard img="https://i.imgur.com/1nT0ISE.png" />
+        <SkillCard img="https://i.imgur.com/hJGiS1G.png" />
       </div>
       <div className=" mt-8 ">
         <SectionHeading title="Backend Development & Security " />
