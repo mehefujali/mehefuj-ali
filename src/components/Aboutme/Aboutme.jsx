@@ -2,7 +2,7 @@ import SectionHeading from "../../ShairedComponents/SectionHeading";
 
 const Aboutme = () => {
   return (
-    <div>
+    <div id="aboutme-sec" className="">
       <div className=" mb-4">
         <SectionHeading title={"About Me"} color={true} />
       </div>

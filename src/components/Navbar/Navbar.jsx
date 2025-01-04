@@ -5,7 +5,7 @@ import { LuBadgeInfo } from "react-icons/lu";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { PiStudent } from "react-icons/pi";
 import { TfiMenuAlt } from "react-icons/tfi";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -18,26 +18,26 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm gap-4 dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm gap-4 dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-5 shadow"
             >
-              <NavLink className="flex gap-1 items-center"><IoHomeOutline />Home</NavLink>
-              <NavLink className="flex gap-1 items-center"><LuBadgeInfo /> About me</NavLink>
-              <NavLink className="flex gap-1 items-center"><GiSkills /> Skills</NavLink>
-              <NavLink className="flex gap-1 items-center"><PiStudent /> Education</NavLink>
-              <NavLink className="flex gap-1 items-center"><GrProjects /> Projects</NavLink>
-              <NavLink className="flex gap-1 items-center"><MdOutlinePermContactCalendar /> Contact</NavLink>
+              <a className="flex gap-1 items-center"><IoHomeOutline />Home</a>
+              <a href="#aboutme-sec" className="flex gap-1 items-center"><LuBadgeInfo /> About me</a>
+              <a href="#skills-section" className="flex gap-1 items-center"><GiSkills /> Skills</a>
+              <a className="flex gap-1 items-center"><PiStudent /> Education</a>
+              <a className="flex gap-1 items-center"><GrProjects /> Projects</a>
+              <a className="flex gap-1 items-center"><MdOutlinePermContactCalendar /> Contact</a>
             </ul>
           </div>
           <Link to='/' className="md:text-xl xl:text-2xl font-bold text-primary-color">Mehefuj A.</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-5">
-            <NavLink>Home</NavLink>
-            <NavLink>About me</NavLink>
-            <NavLink>Skills</NavLink>
-            <NavLink>Education</NavLink>
-            <NavLink>Projects</NavLink>
-            <NavLink>Contact</NavLink>
+            <a to="">Home</a>
+          <a href="#aboutme-sec">About me</a>
+            <a href="#skills-section">Skills</a>
+            <a>Education</a>
+            <a>Projects</a>
+            <a>Contact</a>
           </ul>
         </div>
         <div className="navbar-end">
