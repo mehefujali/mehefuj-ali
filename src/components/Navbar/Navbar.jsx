@@ -10,7 +10,7 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar w-11/12 mx-auto items-center">
+      <div className="navbar w-11/12 mx-auto p-0 items-center">
         <div className="navbar-start items-center">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,7 +28,7 @@ const Navbar = () => {
               <NavLink className="flex gap-1 items-center"><MdOutlinePermContactCalendar /> Contact</NavLink>
             </ul>
           </div>
-          <Link to='/' className="md:text-xl xl:text-2xl font-bold">Mehefuj A.</Link>
+          <Link to='/' className="md:text-xl xl:text-2xl font-bold text-primary-color">Mehefuj A.</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-5">
