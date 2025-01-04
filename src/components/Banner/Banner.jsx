@@ -3,13 +3,10 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdOutlineArrowDownward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
-
+import "./banner.css";
 const Banner = () => {
   return (
-    <div className=" py-16 relative overflow-hidden bg-cover " 
-    
-   
-    >
+    <div id="hero-bg" className=" py-20  relative overflow-hidden bg-cover ">
       <div className="  gap-4 w-11/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="md:w-6/12 w-11/12 mx-auto md:mx-0">
           <div className="  flex flex-col gap-2">
@@ -24,7 +21,7 @@ const Banner = () => {
                 delaySpeed={7000}
               />
             </h3>
-            <h1 className=" text-primary-color font-bold text-2xl lg:text-4xl xl:text-5xl">
+            <h1 className=" text-primary-color font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
               Web Developer
             </h1>
             <p className=" text-sm xl:text-lg text-justify md:text-start 2xl:text-justify">{`
@@ -70,17 +67,23 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className=" md:w-6/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
+        <div className=" relative md:w-6/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
+          <div
+            id="hero-effect-1"
+            className=" h-44 w-44  bg-blend-overlay  bg-primary-color bg-opacity-60 rounded-full absolute -z-10 blur-3xl  bottom-1/2 md:right-1/4 lg:right-1/2 "
+          ></div>
           <img
-            className=" drop-shadow-md text-primary-color w-full "
+            className="  drop-shadow-md text-primary-color w-full "
             src="https://i.imgur.com/g7rfLhs.png"
             alt=""
           />
         </div>
       </div>
 
-      <div className=" h-72 w-72 xl:h-96 xl:w-96 bg-primary-color bg-opacity-60 rounded-full absolute -z-10 blur-3xl top-4 md:right-1/4 lg:right-1/2 "></div>
-     
+      <div
+        id="hero-effect-1"
+        className=" hidden md:flex h-72 bg-blend-overlay w-72 xl:h-96 xl:w-96 bg-primary-color bg-opacity-60 rounded-full absolute -z-10 blur-3xl -top-24 md:right-1/4 lg:right-1/2 "
+      ></div>
     </div>
   );
 };
