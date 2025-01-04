@@ -42,10 +42,12 @@ const Navbar = () => {
               <a className="flex gap-1 items-center" href="#education">
                 <PiStudent /> Education
               </a>
-              <a className="flex gap-1 items-center">
+              <a href="#projects" className="flex gap-1 items-center">
                 <GrProjects /> Projects
               </a>
-              <a className="flex gap-1 items-center">
+              <a 
+              href="#contact"
+              className="flex gap-1 items-center">
                 <MdOutlinePermContactCalendar /> Contact
               </a>
             </ul>
@@ -73,8 +75,8 @@ const Navbar = () => {
               <a data-to-scrollspy-id="education" href="#education">
                 Education
               </a>
-              <a>Projects</a>
-              <a>Contact</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
             </ul>
          
         </div>

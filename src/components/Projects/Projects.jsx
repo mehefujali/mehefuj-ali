@@ -12,7 +12,7 @@ const Projects = () => {
   })
   },[])
   return (
-    <div className=" my-14">
+    <div className=" my-14" id="projects">
       <SectionHeading
         title="Projects"
         color={true}
