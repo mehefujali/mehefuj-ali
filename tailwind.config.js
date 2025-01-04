@@ -9,7 +9,9 @@ export default {
   theme: {
     extend: {
       colors:{
-        'primary-color' : '#00ff4c'
+        'primary-color' : '#00ff4c',
+        'sec-color' : '#00ff4c0e',
+        'low-bg-color' : '#ffffff07',
       }
     },
   },

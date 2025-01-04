@@ -6,11 +6,11 @@ import { Typewriter } from "react-simple-typewriter";
 import "./banner.css";
 const Banner = () => {
   return (
-    <div id="hero-bg" className=" py-20  relative overflow-hidden bg-cover ">
+    <div id="hero-bg" className=" py-20   relative overflow-hidden bg-cover bg-gradient-to-t from-transparent to-sec-color ">
       <div className="  gap-4 w-11/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="md:w-6/12 w-11/12 mx-auto md:mx-0">
           <div className="  flex flex-col gap-2">
-            <h3 className=" text-xl lg:text-2xl xl:text-3xl">
+            <h3 className=" text-xl md:text-lg lg:text-2xl xl:text-3xl">
               <Typewriter
                 words={["Hi, I’m Mehefuj Ali"]}
                 loop={false}
@@ -21,7 +21,7 @@ const Banner = () => {
                 delaySpeed={7000}
               />
             </h3>
-            <h1 className=" text-primary-color font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+            <h1 className=" text-primary-color font-bold text-2xl  lg:text-4xl xl:text-5xl">
               Web Developer
             </h1>
             <p className=" text-sm xl:text-lg text-justify md:text-start 2xl:text-justify">{`
