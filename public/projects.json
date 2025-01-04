@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Study Hive",
+    "image": "https://i.imgur.com/VCWrQ5I.png",
+    "description": "Study Hive is an innovative online platform designed to assist students in accessing a wide range of study materials, engaging in peer-to-peer learning, and tracking their academic progress. It offers features like interactive quizzes, collaborative study groups, and personalized study plans to improve learning outcomes. The platform is built using modern web technologies to ensure a seamless user experience, with a focus on performance, scalability, and ease of use.",
+    "features": [
+      "Collaborative Assignments: Create and share assignments with all users.",
+      "Peer Grading: Grade assignments and provide constructive feedback.",
+      "User-Friendly Interface: Clean and intuitive design for seamless navigation.",
+      "Secure Data: Environment variables are used for Firebase and MongoDB credentials.",
+      "Responsive Design: Fully optimized for mobile, tablet, and desktop.",
+      "Difficulty Levels: Assignments can be categorized as Easy, Medium, or Hard."
+    ],
+    "technologies": [
+      "React",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Firebase",
+      "Tailwind"
+    ],
+    "liveLink": "https://study-hive-k.web.app",
+    "clientRepo": "https://github.com/mehefujali/study-hive",
+    "serverRepo": "https://github.com/mehefujali/study-hive-server.git"
+  },
+  {
+    "title": "Talent Flare",
+    "image": "https://i.imgur.com/ERzZCWT.png",
+    "description": "Talent Flare is a dynamic job portal platform designed to connect job seekers with employers across various industries. It allows users to create professional profiles, showcase their skills and experience, and apply for job opportunities directly on the platform. Employers can post job listings, review applications, and connect with candidates in real-time. The platform features advanced search filters, job recommendations, and a robust messaging system to facilitate smooth communication between employers and job seekers. With a user-friendly interface and seamless integration of features, Talent Flare aims to simplify the recruitment process and help individuals find their ideal job.",
+    "features": [
+      "Job Listings: Browse available job opportunities across various industries.",
+      "Candidate Management: Employers can manage applications and track candidates efficiently.",
+      "Application Tracking: Job seekers can track the status of their applications in real time.",
+      "Responsive Design: Accessible on both desktop and mobile devices."
+    ],
+    "technologies": [
+      "React",
+      "CSS",
+      "GSAP",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Firebase",
+      "Tailwind"
+    ],
+    "liveLink": "https://talentflare.web.app",
+    "clientRepo": "https://github.com/mehefujali/talent-flare",
+    "serverRepo": "https://github.com/mehefujali/talent-flare-server"
+  },
+  {
+    "title": "Rise Hub",
+    "image": "https://i.imgur.com/uPDZFFL.png",
+    "description": "Rise Hub is an innovative platform designed to support and enhance the learning experience for students and educators. It offers a comprehensive suite of tools and resources aimed at fostering collaboration, engagement, and academic success. The platform provides access to a variety of educational materials, interactive features, and support services tailored to meet the diverse needs of the learning community.",
+    "features": [
+      "Dynamic Campaign Management: Add, update, and track campaigns effortlessly with an intuitive interface.",
+      "Secure Donations: Donate seamlessly with secure data storage for every transaction.",
+      "Private Routes for Users: Authenticated access to manage campaigns and ensure data privacy.",
+      "Dark and Light Modes: Toggle between themes for enhanced user experience.",
+      "Responsive Design: Fully optimized for all devices, including desktops, tablets, and mobiles.",
+      "Engaging Animations and Notifications: Powered by modern libraries for a better user experience."
+    ],
+    "technologies": [
+      "React",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Firebase",
+      "Tailwind"
+    ],
+    "liveLink": "https://rise-hub-k.web.app/home",
+    "clientRepo": "https://github.com/mehefujali/rise-hub",
+    "serverRepo": "https://github.com/mehefujali/rise-hub-server"
+  }
+]

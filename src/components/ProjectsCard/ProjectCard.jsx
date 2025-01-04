@@ -1,14 +1,15 @@
+/* eslint-disable react/prop-types */
 
 import styled from "styled-components";
 
-const ProjectCard = () => {
+const ProjectCard = ({project}) => {
   return (
       <StyledWrapper>
       <div className="card cursor-pointer">
         <div className="icon">
-        <img src="https://i.imgur.com/VCWrQ5I.png" alt="" />
+        <img className=" w-full" src={project?.image} alt="" />
         </div>
-        <strong className=" text-black"> Study hive
+        <strong className=" text-black"> {project?.title}
         </strong>
         
         <span className=" bg-transparent  backdrop-blur-sm ">

@@ -5,12 +5,12 @@ import { LuBadgeInfo } from "react-icons/lu";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { PiStudent } from "react-icons/pi";
 import { TfiMenuAlt } from "react-icons/tfi";
-import { Link, useLocation } from "react-router-dom";
+import { Link, } from "react-router-dom";
 import "./navbar.css";
 
 const Navbar = () => {
-  const location = useLocation();
-  console.log(location);
+  // const location = useLocation();
+  
   return (
     <div className=" fixed backdrop-blur-lg top-0 w-full z-[9999] ">
       <div className="navbar  md:p-0 w-11/12 mx-auto p-0 items-center">
