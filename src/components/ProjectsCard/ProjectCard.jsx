@@ -1,34 +1,61 @@
 /* eslint-disable react/prop-types */
 
-import styled from "styled-components";
+import { useState } from "react";
 
-const ProjectCard = ({project}) => {
+import styled from "styled-components";
+import ProjectDetails from "../../Pages/ProjectDetails/ProjectDetails";
+
+const ProjectCard = ({ project }) => {
+  let [isOpen, setIsOpen] = useState(false);
+  const [projectId, setProjectId] = useState(null);
+
+  function open() {
+    setIsOpen(true);
+  }
+  console.log(isOpen);
+
   return (
+    <div
+      onClick={() => {
+        open();
+        setProjectId(project._id);
+      }}
+    >
+      <ProjectDetails
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        projectId={projectId}
+      />
       <StyledWrapper>
-      <div className="card cursor-pointer">
-        <div className="icon">
-        <img className=" w-full" src={project?.image} alt="" />
+        <div className="card cursor-pointer">
+          <div className="icon">
+            <img className=" w-full" src={project?.image} alt="" />
+          </div>
+          <strong className=" text-black"> {project?.title}</strong>
+
+          <span className=" bg-transparent  backdrop-blur-sm ">
+            <button
+              onClick={() => {
+                open();
+                setProjectId(project._id);
+              }}
+              className="btn  btn-sm md:btn-md rounded bg-primary-color hover:bg-primary-color hover:scale-105 text-black "
+            >
+              View details
+            </button>
+          </span>
         </div>
-        <strong className=" text-black"> {project?.title}
-        </strong>
-        
-        <span className=" bg-transparent  backdrop-blur-sm ">
-        <a className="btn  btn-sm md:btn-md rounded bg-primary-color hover:bg-primary-color hover:scale-105 text-black ">
-        View details
-          </a>
-            
-        </span>
-      </div>
-    </StyledWrapper>
+      </StyledWrapper>
+    </div>
   );
 };
 
 const StyledWrapper = styled.div`
   .card {
     --bg: #f7f7f8;
-    --hover-bg: #FFE5F4;
-    --hover-text: #E50087;
-   
+    --hover-bg: #ffe5f4;
+    --hover-text: #e50087;
+
     text-align: center;
     background: var(--bg);
     padding: 1.5em;
@@ -36,7 +63,7 @@ const StyledWrapper = styled.div`
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
+    transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,13 +78,13 @@ const StyledWrapper = styled.div`
   }
 
   .card > :not(span) {
-    transition: .3s cubic-bezier(.6,.4,0,1);
+    transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
   }
 
   .card > strong {
     display: block;
     font-size: 1.4rem;
-    letter-spacing: -.035em;
+    letter-spacing: -0.035em;
   }
 
   .card span {
@@ -68,25 +95,24 @@ const StyledWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
     border-radius: 5px;
     font-weight: bold;
     top: 100%;
-    transition: all .3s cubic-bezier(.6,.4,0,1);
+    transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
   }
 
   .card:hover span {
     top: 0;
-    
   }
 
-//   .card:hover {
-//     background: var(--hover-bg);
-//   }
+  //   .card:hover {
+  //     background: var(--hover-bg);
+  //   }
 
-//   .card:hover>div,.card:hover>strong {
-//     opacity: 0;
-//   }`;
-
+  //   .card:hover>div,.card:hover>strong {
+  //     opacity: 0;
+  //   }
+`;
 
 export default ProjectCard;
