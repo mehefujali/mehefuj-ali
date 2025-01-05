@@ -2,7 +2,7 @@ import SectionHeading from "../../ShairedComponents/SectionHeading";
 
 const Education = () => {
   return (
-    <div className=" my-16" id="education">
+    <div className=" my-16" name="education">
       <SectionHeading title="Educaiton" color={true} />
 
       <div className=" w-11/12 flex-col xl:flex-row mx-auto mt-12 flex gap-5 items-center justify-center">

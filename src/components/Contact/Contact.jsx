@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div className=" my-14" id="contact">
+    <div className=" my-14" name="contact">
       <SectionHeading title={"Let’s Connect"} color={true}></SectionHeading>
       <div className=" w-11/12 mx-auto mt-12">
         <div className=" flex w-full justify-center items-start md:justify-between lg:justify-center xl:items-center flex-col gap-6 md:flex-row">
