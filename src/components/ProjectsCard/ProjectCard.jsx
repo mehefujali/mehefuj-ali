@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
   function open() {
     setIsOpen(true);
   }
-  console.log(isOpen);
+  
 
   return (
     <div
