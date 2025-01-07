@@ -126,6 +126,7 @@ const Contact = () => {
               <label htmlFor="" className=" flex flex-col gap-1 items-start">
                 Message :
                 <textarea
+                  placeholder="Type your message..."
                   className=" textarea resize-none focus:outline-none border-gray-500 hover:outline-none rounded-md w-full"
                   name="message"
                   id=""

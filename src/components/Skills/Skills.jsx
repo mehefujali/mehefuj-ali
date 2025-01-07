@@ -17,6 +17,7 @@ const Skills = () => {
         <SkillCard img="https://i.imgur.com/If2tjcN.png" />
         <SkillCard img="https://i.imgur.com/PQUrE4k.png" />
         <SkillCard img="https://i.imgur.com/5GwxUUf.png" />
+        <SkillCard img="https://i.imgur.com/Vu7vq1H.png" />
         <SkillCard img="https://i.imgur.com/HdyOITq.png" />
         <SkillCard img="https://i.imgur.com/SSVAekE.png" />
         <SkillCard img="https://i.imgur.com/1nT0ISE.png" />
