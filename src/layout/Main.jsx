@@ -4,7 +4,7 @@ import Footer from "../components/Footer/Footer";
 
 const Main = () => {
   return (
-    <div className="  npm rutext-white">
+    <div className="  text-white dark:text-white">
       <div>
         <Navbar />
       </div>

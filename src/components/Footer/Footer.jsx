@@ -1,27 +1,75 @@
 import { BsGithub } from "react-icons/bs";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
+      <footer className="footer footer-center bg-base-200  rounded p-10">
         <nav className=" flex flex-col md:flex-row gap-4">
-          <a data-to-scrollspy-id="home" href="#home">
+          <ScrollLink
+            to="home"
+            spy={true}
+            smooth={true}
+            
+            offset={-200}
+            className=" cursor-pointer"
+          >
             Home
-          </a>
-          <a data-to-scrollspy-id="aboutme" href="#aboutme">
+          </ScrollLink>
+          <ScrollLink
+            to="aboutme"
+            spy={true}
+            smooth={true}
+            
+            offset={-200}
+            className=" cursor-pointer"
+          >
             About me
-          </a>
+          </ScrollLink>
 
-          <a data-to-scrollspy-id="skills" href="#skills">
+          <ScrollLink
+            to="skills"
+            spy={true}
+            smooth={true}
+            
+            offset={-200}
+            className=" cursor-pointer"
+          >
             Skills
-          </a>
-          <a data-to-scrollspy-id="education" href="#education">
+          </ScrollLink>
+          <ScrollLink
+            to="education"
+            spy={true}
+            smooth={true}
+            
+            offset={-200}
+            className=" cursor-pointer"
+          >
             Education
-          </a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          </ScrollLink>
+          <ScrollLink
+            to="projects"
+            spy={true}
+            smooth={true}
+            
+            offset={-200}
+            href="#projects"
+            className=" cursor-pointer"
+          >
+            Projects
+          </ScrollLink>
+          <ScrollLink
+            to="contact"
+            spy={true}
+            smooth={true}
+            
+            offset={-200}
+            className=" cursor-pointer"
+          >
+            Contact
+          </ScrollLink>
         </nav>
         <nav>
           <div className=" mt-2  flex  items-center gap-2">
@@ -57,7 +105,8 @@ const Footer = () => {
         </nav>
         <aside>
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by Mehefuj Ali
+            Copyright © {new Date().getFullYear()} - All right reserved by
+            Mehefuj Ali
           </p>
         </aside>
       </footer>
