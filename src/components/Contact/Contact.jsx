@@ -12,7 +12,7 @@ import { useState } from "react";
 const Contact = () => {
   const [sending, setSend] = useState(false);
   const handleSubmitMail = async (e) => {
-    setSend(true)
+    setSend(true);
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
@@ -27,14 +27,14 @@ const Contact = () => {
         formData
       );
       if (data.messageId) {
-        toast.success("Your email has been sent");
+        toast.success("Your message has been sent");
         form.reset();
       }
-      
-      setSend(false)
+
+      setSend(false);
     } catch {
-      toast.error("Could not send email. Please try again.");
-      setSend(false)
+      toast.error("Could not send message. Please try again.");
+      setSend(false);
     }
   };
 
@@ -125,7 +125,7 @@ const Contact = () => {
                 ></textarea>
               </label>
               <button className=" text-center  btn hover:bg-primary-color  hover:scale-105 active:scale-95 duration-150 bg-primary-color text-black text-xs  p-2 lg:p-3 rounded lg:text-sm lg:px-3">
-                {sending?"Sending...":"Send"}
+                {sending ? "Sending..." : "Send"}
               </button>
             </form>
           </div>
