@@ -12,7 +12,7 @@ import { useState } from "react";
 const Contact = () => {
   const [sending, setSend] = useState(false);
   const handleSubmitMail = async (e) => {
-    setSend(false)
+    setSend(true)
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
