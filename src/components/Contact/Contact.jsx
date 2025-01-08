@@ -4,51 +4,40 @@ import { FaEarthAmericas } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Swal from "sweetalert2";
+
 import axios from "axios";
-
-const handleSubmitMail = async (e) => {
-  e.preventDefault();
-  const form = e.target;
-  const name = form.name.value;
-  const email = form.email.value;
-  const message = form.message.value;
-
-  if (!name || !email || !message) {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "All fields are required!",
-    });
-    return;
-  }
-
-  const formData = { name, email, message };
-
-  try {
-    const { data } = await axios.post(
-      `${import.meta.env.VITE_API_URL}/register`,
-      formData
-    );
-    if (data.messageId) {
-      Swal.fire({
-        icon: "success",
-        title: "Success",
-        text: "Your email has been sent. We will respond soon!",
-      });
-      form.reset();
-    }
-    console.log(data);
-  } catch (error) {
-    Swal.fire({
-      icon: "error",
-      title: "Submission Failed",
-      text: error.message || "Could not send email. Please try again.",
-    });
-  }
-};
+import toast from "react-hot-toast";
+import { useState } from "react";
 
 const Contact = () => {
+  const [sending, setSend] = useState(false);
+  const handleSubmitMail = async (e) => {
+    setSend(false)
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const message = form.message.value;
+
+    const formData = { name, email, message };
+
+    try {
+      const { data } = await axios.post(
+        `${import.meta.env.VITE_API_URL}/register`,
+        formData
+      );
+      if (data.messageId) {
+        toast.success("Your email has been sent");
+        form.reset();
+      }
+      
+      setSend(false)
+    } catch {
+      toast.error("Could not send email. Please try again.");
+      setSend(false)
+    }
+  };
+
   return (
     <div className=" my-14" name="contact">
       <SectionHeading title={"Let’s Connect"} color={true}></SectionHeading>
@@ -106,6 +95,7 @@ const Contact = () => {
               <label htmlFor="" className=" flex flex-col gap-1 items-start">
                 Name :
                 <input
+                  required
                   placeholder="Enter your name"
                   type="text"
                   className="input focus:outline-none border-gray-500 hover:outline-none rounded-md w-full "
@@ -116,6 +106,7 @@ const Contact = () => {
               <label htmlFor="" className=" flex flex-col gap-1 items-start">
                 Email :
                 <input
+                  required
                   placeholder="Enter your email"
                   type="text"
                   className="input focus:outline-none border-gray-500 hover:outline-none rounded-md w-full"
@@ -126,6 +117,7 @@ const Contact = () => {
               <label htmlFor="" className=" flex flex-col gap-1 items-start">
                 Message :
                 <textarea
+                  required
                   placeholder="Type your message..."
                   className=" textarea resize-none focus:outline-none border-gray-500 hover:outline-none rounded-md w-full"
                   name="message"
@@ -133,7 +125,7 @@ const Contact = () => {
                 ></textarea>
               </label>
               <button className=" text-center  btn hover:bg-primary-color  hover:scale-105 active:scale-95 duration-150 bg-primary-color text-black text-xs  p-2 lg:p-3 rounded lg:text-sm lg:px-3">
-                Send
+                {sending?"Sending...":"Send"}
               </button>
             </form>
           </div>

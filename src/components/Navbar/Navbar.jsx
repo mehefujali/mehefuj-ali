@@ -13,7 +13,7 @@ const Navbar = () => {
   // const location = useLocation();
 
   return (
-    <div className=" fixed backdrop-blur-lg top-0 w-full z-[9999] ">
+    <div className=" fixed backdrop-blur-lg top-0 w-full z-50 ">
       <div className="navbar  md:p-0 w-11/12 mx-auto p-0 items-center">
         <div className="navbar-start items-center">
           <div className="dropdown">
