@@ -22,17 +22,23 @@ const Projects = () => {
   return (
     <div className=" my-14" name="projects">
       <SectionHeading
-        title="Projects"
+        title="Latest Projects"
         color={true}
-        subTitle="This section highlights some of the key projects I've worked on, showcasing my skills and experience in web development.
+        subTitle="Here are some of my most recent and significant projects showcasing my skills and expertise.
 
 "
       />
       <div className=" bg-low-bg-color py-14 my-14">
         <div className="w-11/12 mx-auto mt-8 md:gap-8  gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {projectLoading?<div><ProjectLoader/></div>:projects.map((project, idx) => (
-            <ProjectCard key={idx} project={project} />
-          ))}
+          {projectLoading ? (
+            <div>
+              <ProjectLoader />
+            </div>
+          ) : (
+            projects.map((project, idx) => (
+              <ProjectCard key={idx} project={project} />
+            ))
+          )}
         </div>
       </div>
     </div>
