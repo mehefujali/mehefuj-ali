@@ -6,8 +6,14 @@ import { Typewriter } from "react-simple-typewriter";
 import "./banner.css";
 const Banner = () => {
   return (
-    <div  name="home" className=" py-20   relative overflow-hidden bg-cover bg-gradient-to-t from-transparent to-sec-color ">
-      <div id="" className="  gap-4 w-11/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
+    <div
+      name="home"
+      className=" py-20   relative overflow-hidden bg-cover bg-gradient-to-t from-transparent to-sec-color "
+    >
+      <div
+        id=""
+        className="  gap-4 w-11/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between"
+      >
         <div className="md:w-6/12 w-11/12 mx-auto md:mx-0">
           <div className="  flex flex-col gap-2">
             <h3 className=" text-xl md:text-lg lg:text-2xl xl:text-3xl">
@@ -75,7 +81,7 @@ const Banner = () => {
           <img
             className="  drop-shadow-md text-primary-color w-full "
             src="https://i.imgur.com/g7rfLhs.png"
-            alt=""
+            alt="Mehefuj Ali"
           />
         </div>
       </div>

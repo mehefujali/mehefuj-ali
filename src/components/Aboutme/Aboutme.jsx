@@ -9,7 +9,7 @@ const Aboutme = () => {
       <div className=" py-14 bg-low-bg-color ">
         <div className="w-11/12 mx-auto flex  gap-4 items-center ">
           <div className=" w-4/12 hidden lg:flex">
-            <img src="https://i.imgur.com/g7rfLhs.png" alt="" />
+            <img src="https://i.imgur.com/g7rfLhs.png" alt="Mehefuj Ali" />
           </div>
           <div className="  lg:w-7/12 2xl:w-6/12">
             <p className="  text-sm xl:text-lg text-justify lg:text-start ">

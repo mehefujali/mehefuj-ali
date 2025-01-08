@@ -1,118 +1,28 @@
-/* eslint-disable react/prop-types */
-
-import { useState } from "react";
-
-import styled from "styled-components";
-import ProjectDetails from "../../Pages/ProjectDetails/ProjectDetails";
+import PropTypes from "prop-types";
 
 const ProjectCard = ({ project }) => {
-  let [isOpen, setIsOpen] = useState(false);
-  const [projectId, setProjectId] = useState(null);
-
-  function open() {
-    setIsOpen(true);
-  }
-  
-
+  const { title, image, technologies } = project;
   return (
-    <div
-      onClick={() => {
-        open();
-        setProjectId(project._id);
-      }}
-    >
-      <ProjectDetails
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        projectId={projectId}
-      />
-      <StyledWrapper>
-        <div className="card cursor-pointer">
-          <div className="icon">
-            <img className=" w-full" src={project?.image} alt="" />
-          </div>
-          <strong className=" text-black"> {project?.title}</strong>
+    <div>
 
-          <span className=" bg-transparent  backdrop-blur-sm ">
-            <button
-              onClick={() => {
-                open();
-                setProjectId(project._id);
-              }}
-              className="btn  btn-sm md:btn-md rounded bg-primary-color hover:bg-primary-color hover:scale-105 text-black "
-            >
-              View details
-            </button>
-          </span>
+      <div className=" w-fit rounded-md overflow-hidden border-white border-2 border-opacity-10">
+        <img src={image} className=" max-h-60 w-full" alt="" />
+        <div className="p-6 flex flex-col gap-2">
+          <h1 className="text-lg md:text-2xl font-bold">{title}</h1>
+          <div className=" flex flex-wrap gap-1  justify-start">
+            {technologies?.map((technology, idx) => (
+              <div key={idx} className=" bg-white  bg-opacity-10 px-1 w-fit rounded-sm">{technology}</div>
+            ))}
+          </div>
+          <button className=" text-center justify-center mt-4 flex items-center gap-2  hover:scale-105 active:scale-95 duration-150 bg-primary-color text-black text-xs  p-2 lg:p-3 rounded lg:text-sm lg:px-3">View details</button>
         </div>
-      </StyledWrapper>
+      </div>
     </div>
   );
 };
 
-const StyledWrapper = styled.div`
-  .card {
-    --bg: #f7f7f8;
-    --hover-bg: #ffe5f4;
-    --hover-text: #e50087;
-
-    text-align: center;
-    background: var(--bg);
-    padding: 1.5em;
-    padding-block: 1.8em;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-  }
-
-  .card__body {
-    color: #464853;
-    line-height: 1.5em;
-    font-size: 1em;
-  }
-
-  .card > :not(span) {
-    transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
-  }
-
-  .card > strong {
-    display: block;
-    font-size: 1.4rem;
-    letter-spacing: -0.035em;
-  }
-
-  .card span {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 5px;
-    font-weight: bold;
-    top: 100%;
-    transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
-  }
-
-  .card:hover span {
-    top: 0;
-  }
-
-  //   .card:hover {
-  //     background: var(--hover-bg);
-  //   }
-
-  //   .card:hover>div,.card:hover>strong {
-  //     opacity: 0;
-  //   }
-`;
-
+ProjectCard.propTypes = {
+  project: PropTypes.object.isRequired,
+  projectLoading: PropTypes.bool.isRequired,
+};
 export default ProjectCard;
