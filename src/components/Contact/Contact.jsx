@@ -108,7 +108,7 @@ const Contact = () => {
                 <input
                   required
                   placeholder="Enter your email"
-                  type="text"
+                  type="email"
                   className="input focus:outline-none border-gray-500 hover:outline-none rounded-md w-full"
                   name="email"
                   id=""
