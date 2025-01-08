@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
   const { title, image, technologies } = project;
@@ -15,7 +16,7 @@ const ProjectCard = ({ project }) => {
               <div key={idx} className=" bg-white  bg-opacity-10 px-1 w-fit rounded-sm">{technology}</div>
             ))}
           </div>
-          <button className=" cursor-pointer text-center justify-center mt-4 flex items-center gap-2  hover:scale-105 active:scale-95 duration-150 bg-primary-color text-black text-xs  p-2 lg:p-3 rounded lg:text-sm lg:px-3">View details</button>
+          <Link to={`/project-details/${project._id}`} className=" cursor-pointer text-center justify-center mt-4 flex items-center gap-2  hover:scale-105 active:scale-95 duration-150 bg-primary-color text-black text-xs  p-2 lg:p-3 rounded lg:text-sm lg:px-3">View details</Link>
         </div>
       </div>
     </div>
@@ -24,6 +25,6 @@ const ProjectCard = ({ project }) => {
 
 ProjectCard.propTypes = {
   project: PropTypes.object.isRequired,
-  projectLoading: PropTypes.bool.isRequired,
+  
 };
 export default ProjectCard;

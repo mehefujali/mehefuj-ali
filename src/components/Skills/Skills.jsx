@@ -1,9 +1,13 @@
 import SectionHeading from "../../ShairedComponents/SectionHeading";
 import SkillCard from "../../ShairedComponents/SkillCard";
 
+
+
 const Skills = () => {
   return (
     <div name="skills" className=" py-14">
+     
+      
       <SectionHeading
         title={"Skills"}
         subTitle="Proficient in HTML, CSS, JavaScript, and React.js, I specialize in creating responsive and visually stunning web applications. With a strong foundation in UI/UX design and modern development tools, I bring ideas to life with precision and creativity."
@@ -52,6 +56,7 @@ const Skills = () => {
         <SkillCard img="https://i.imgur.com/zklDaYS.png" />
         <SkillCard img="https://i.imgur.com/tdpcnMm.png" />
       </div>
+      
     </div>
   );
 };
