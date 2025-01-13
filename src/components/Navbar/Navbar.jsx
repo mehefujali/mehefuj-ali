@@ -181,7 +181,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a href="https://drive.google.com/file/d/1kfFwFdXVnF712mO5gI2qvSfVD3DogCTV/view?usp=sharing"  target="_blank" className="btn  btn-sm md:btn-md rounded bg-primary-color hover:bg-primary-color hover:scale-105 text-black ">
+          <a href="https://drive.google.com/file/d/1TJ4FQTxkIvQOV3Beb2FLRdT8W8WwwDLy/view?usp=sharing"  target="_blank" className="btn  btn-sm md:btn-md rounded bg-primary-color hover:bg-primary-color hover:scale-105 text-black ">
             Download Resume
           </a>
         </div>

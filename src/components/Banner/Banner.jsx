@@ -68,9 +68,9 @@ const Banner = () => {
             {/* btns  */}
             <div className=" mt-3">
               <a
-                href="https://drive.google.com/file/d/1kfFwFdXVnF712mO5gI2qvSfVD3DogCTV/view?usp=sharing"
+                href="https://drive.google.com/file/d/1TJ4FQTxkIvQOV3Beb2FLRdT8W8WwwDLy/view?usp=sharing"
                 target="_blank"
-                className=" flex items-center gap-2  hover:scale-105 active:scale-95 duration-150 bg-primary-color text-black text-xs  p-2 lg:p-3 rounded lg:text-sm lg:px-3"
+                className=" flex items-center gap-2  w-fit hover:scale-105 active:scale-95 duration-150 bg-primary-color text-black text-xs  p-2 lg:p-3 rounded lg:text-sm lg:px-3"
               >
                 Download Resume <MdOutlineArrowDownward />
               </a>
