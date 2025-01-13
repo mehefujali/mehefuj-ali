@@ -32,7 +32,7 @@ const Navbar = () => {
                   smooth={true}
                   activeClass="activeLink"
                   className="flex gap-1 items-center"
-                  href="#home"
+                  
                 >
                   <IoHomeOutline />
                   Home
@@ -181,8 +181,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn  btn-sm md:btn-md rounded bg-primary-color hover:bg-primary-color hover:scale-105 text-black ">
-            Download CV
+          <a href="https://drive.google.com/file/d/1kfFwFdXVnF712mO5gI2qvSfVD3DogCTV/view?usp=sharing"  target="_blank" className="btn  btn-sm md:btn-md rounded bg-primary-color hover:bg-primary-color hover:scale-105 text-black ">
+            Download Resume
           </a>
         </div>
       </div>
