@@ -52,7 +52,7 @@ const Contact = () => {
                 </li>
                 <li className="flex gap-3 items-center text-lg">
                   <FaEarthAmericas className=" text-primary-color" />{" "}
-                  mehefuj.netlify.app{" "}
+                  www.mehefujali.com{" "}
                 </li>
                 <li className="flex gap-3 items-center text-lg">
                   <MdOutlineMailOutline className=" text-primary-color" />{" "}
