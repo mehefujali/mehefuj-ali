@@ -1,6 +1,3 @@
-
-
-
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -8,16 +5,23 @@ import { FaGithub } from "react-icons/fa";
 import { FcCheckmark } from "react-icons/fc";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { Link, useParams } from "react-router-dom";
+import Loader from "../../components/loader/Loader";
 
 const ProjectDetails = () => {
-  const {id} = useParams()
+  const { id } = useParams();
   const [project, setProject] = useState({});
-
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
-    axios
-      .get(`${import.meta.env.VITE_API_URL}/project/${id}`)
-      .then((res) => setProject(res.data));
+    setLoading(true);
+    axios.get(`${import.meta.env.VITE_API_URL}/project/${id}`).then((res) => {
+      setProject(res.data);
+      setLoading(false);
+    });
   }, [id]);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <>
@@ -33,7 +37,10 @@ const ProjectDetails = () => {
                 <p className=" text-sm">{project?.description}</p>
                 <div className=" flex flex-wrap gap-1 my-2">
                   {project?.technologies?.map((tec, idx) => (
-                    <div className=" bg-white  bg-opacity-10 px-1 w-fit rounded-sm" key={idx}>
+                    <div
+                      className=" bg-white  bg-opacity-10 px-1 w-fit rounded-sm"
+                      key={idx}
+                    >
                       {tec}
                     </div>
                   ))}
@@ -71,7 +78,6 @@ const ProjectDetails = () => {
                   >
                     <FaGithub /> Server Repo
                   </Link>
-                  
                 </div>
               </div>
             </div>
