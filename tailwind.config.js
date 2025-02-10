@@ -7,7 +7,7 @@ export default {
     extend: {
       colors: {
         "primary-color": "#2cc6c3",
-        "sec-color": "#2cc6c325 ",
+        "sec-color": "#2cc6c31e",
         "low-bg-color": "#ffffff07",
       },
     },

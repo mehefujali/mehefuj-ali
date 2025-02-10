@@ -70,21 +70,21 @@ const Banner = () => {
               <a
                 href="https://drive.google.com/file/d/1TJ4FQTxkIvQOV3Beb2FLRdT8W8WwwDLy/view?usp=sharing"
                 target="_blank"
-                className=" flex items-center gap-2  w-fit hover:scale-105 active:scale-95 duration-150 bg-primary-color text-black text-xs  p-2 lg:p-3 rounded lg:text-sm lg:px-3"
+                className=" flex items-center gap-2  w-fit lg:hover:scale-105 lg:active:scale-95 duration-150 bg-primary-color text-black text-xs  p-2 lg:p-3 rounded lg:text-sm lg:px-3"
               >
                 Download Resume <MdOutlineArrowDownward />
               </a>
             </div>
           </div>
         </div>
-        <div className=" relative md:w-6/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
+        <div className=" relative  md:w-6/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
           <div
             id="hero-effect-1"
             className=" h-44 w-44  bg-blend-overlay  bg-primary-color bg-opacity-60 rounded-full absolute -z-10 blur-3xl  bottom-1/2 md:right-1/4 lg:right-1/2 "
           ></div>
           <img
-            className="  drop-shadow-md text-primary-color w-full "
-            src="https://i.imgur.com/g7rfLhs.png"
+            className="  drop-shadow-md text-primary-color  w-11/12 mx-auto max-w-xs lg:max-w-xs xl:max-w-md"
+            src="https://i.imgur.com/C0YrSAC.png"
             alt="Mehefuj Ali"
           />
         </div>
