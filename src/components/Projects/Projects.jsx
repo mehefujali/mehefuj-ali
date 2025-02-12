@@ -29,7 +29,7 @@ const Projects = () => {
 "
       />
       <div className=" bg-low-bg-color py-14 my-14">
-        <div className="w-11/12 mx-auto mt-8 md:gap-8  gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="w-11/12 mx-auto mt-8 md:gap-2 xl:gap-6  gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {projectLoading ? (
             <div>
               <ProjectLoader />

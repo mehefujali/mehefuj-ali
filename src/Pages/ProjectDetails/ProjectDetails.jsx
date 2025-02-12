@@ -52,6 +52,22 @@ const ProjectDetails = () => {
                     </div>
                   ))}
                 </div>
+                <h1 className=" font-bold">Challenges Faced :</h1>
+                <div className=" flex flex-wrap flex-col gap-1 my-5">
+                  {project?.ChallengesFaced?.map((tec, idx) => (
+                    <div className=" flex items-center gap-1 " key={idx}>
+                      <FcCheckmark /> {tec}
+                    </div>
+                  ))}
+                </div>
+                <h1 className=" font-bold">Improvements Needed :</h1>
+                <div className=" flex flex-wrap flex-col gap-1 my-2">
+                  {project?.ImprovementsNeeded?.map((tec, idx) => (
+                    <div className=" flex items-center gap-1 " key={idx}>
+                      <FcCheckmark /> {tec}
+                    </div>
+                  ))}
+                </div>
 
                 <div className="mt-4 flex flex-col md:flex-row join">
                   <Link
